@@ -1,0 +1,28 @@
+<div id="hamburger-button" onclick="toggleMenu()"></div>
+
+<div id="menu-wrapper">
+  <ul>
+    <li><a href="index.html">Pledge of Achievement</a></li>
+    <!-- Change the css of the div to make a right arrow -->
+    <li id="trustees-link"><a onclick="trusteesDropdown()">Trustees<div id="trustees-triangle" class="right-triangle"></div></a>
+      <!-- This is a flyout inside of the trustees menu item -->
+      <ul id="trustees-dropdown">
+        <!-- TODO: Fix the relative links (requires some form of angular routing)-->
+        <li><a href="trustees.html" onclick="window.sessionStorage.setItem('pageSection', 'upcoming'), trusteesPage()">Upcoming Board Meetings</a></li>
+        <li><a href="trustees.html" onclick="window.sessionStorage.setItem('pageSection', 'board-meetings'), trusteesPage()">Board Meetings</a></li>
+        <li><a href="trustees.html" onclick="window.sessionStorage.setItem('pageSection', 'know'), trusteesPage()">Get to Know</a></li>
+        <li><a href="trustees.html" onclick="window.sessionStorage.setItem('pageSection', 'map'), trusteesPage()">Maps</a></li>
+        <li><a href="trustees.html" onclick="window.sessionStorage.setItem('pageSection', 'contact'), trusteesPage()">Contact</a></li>
+      </ul>
+    </li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="http://newsroom.ccsd.net/news-feed/">Newsfeed</a></li>
+    <li><a href="http://itsyourchoice.ccsd.net/">School Choice</a></li>
+    <li><a href="http://teachvegas.ccsd.net/teaching/overview/">Teach Vegas</a></li>
+    <li><a href="http://ccsd.net/students/bully/">Report a Bully</a></li>
+    <li><a href="http://ccsd.net/district/calendar/">Calendars</a></li>
+    <li><a href="http://ccsd.net/departments/food-service/school-lunch-menus">School Lunch menu</a></li>
+    <li><a href="http://faces.ccsd.net/">Faces-Family & Community Engagement</a></li>
+    <li><a href="http://campus.ccsd.net/">Infinite Campus</a></li>
+  </ul>
+</div>

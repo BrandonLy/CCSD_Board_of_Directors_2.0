@@ -1,0 +1,119 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+// $ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+// @import "../www/lib/ionic/scss/";
+
+//sass --watch scss:www/css/
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+$blue: #3D73DB;
+
+.content-wrapper {
+    background-color: $blue;
+    background-image: linear-gradient(-180deg, #3E80D7 2%, #372D9B 100%);
+    text-transform: uppercase;
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+    padding-top: 52px;
+    text-align: center;
+    p {
+        font-size: 15px;
+        letter-spacing: 0.53px;
+        line-height: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.logo {
+    background-image: url("../img/ccsd.png");
+    height: 63px;
+    width: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto 32px auto;
+}
+
+.title {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.53;
+    margin-bottom: 36px;
+}
+
+.line {
+    height: 1px;
+    width: 90%;
+    margin: 30px auto;
+    background-color: white;
+}
+
+.single-item {
+    margin: 5%;
+    p {
+        padding-top: 4%;
+    }
+}
+
+.icons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .single-item {
+
+    }
+    a {
+        display: block;
+        width: 39%;
+        margin: 2%;
+    }
+}
+
+.social-media-icons {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    a {
+        display: block;
+        max-width: 20%;
+        margin: 2.5%;
+    }
+}
+
+.events-title {
+    font-size: 25px;
+    letter-spacing: 0.88px;
+    margin-bottom: 30px;
+}
+
+.cal {
+    max-width: 90vw;
+    margin: 0 auto;
+    height: 60vh;
+    padding-bottom: 50px;
+}

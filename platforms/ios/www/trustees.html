@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>CCSD Board of Directors | Trustees</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,600,600italic,700' rel='stylesheet' type='text/css'>
+
+  <link href="css/ionic.app.css" rel="stylesheet">
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+  <script src="js/controllers/main.js"></script>
+  <script src="js/directives/menu.js"></script>
+</head>
+
+<!-- Set the angular app here -->
+
+<body ng-app="CCSD_Board" onload="trusteesPage()">
+  <ion-pane>
+
+    <!-- mainCtrl scope starts here -->
+    <div ng-controller="mainCtrl">
+
+      <!-- Custom Menu Directive - Code for this can be found in templates/menu.html -->
+      <menu></menu>
+
+      <!-- Anything that is visible on the page should be inside the <ion-content> </ion-content> tags -->
+      <ion-content scroll="false">
+
+        <div id="content-wrapper">
+
+        <div class="site-wrapper">
+
+        <!-- This will be the same for the pages except the image changes -->
+        <div class="header">
+          <img class="trustees-tagline tagline" src="img/CCSDlogo.jpg" />
+        </div>
+
+        <!-- Add a background image to this (trustees.jpg) -->
+        <div class="trustees-banner banner">
+          <h1 class="page-header">Trustees</h1>
+          <div class="line"></div>
+          <p class="page-tagline">All students progress in school and graduate prepared to succeed and contribute in a diverse global society.</p>
+        </div>
+
+        <!-- This is the scroll down call to action -->
+        <div class="scroller">
+          <p>scroll down for more info</p>
+          <!-- Change the css of this div to be a triangle -->
+          <div class="triangle-down">
+            <img src="img/triangle.png" />
+          </div>
+        </div>
+
+        <!-- Set the background of this image to be (CCSDlogo.jpg) -->
+        <div class="section-image"></div>
+
+        <!-- Upcoming Board Meetings Section -->
+        <div class="page-section" id="upcoming">
+          <h1 class="section-header">Upcoming Board Meetings</h1>
+          <ul class="upcoming-meetings">
+            <li>
+              <p class="date odd">Tuesday, Mar 08, 2016, 10:30 am</p>
+              <p class="meeting-title odd">Attendance Zone Advisory Commission Meeting</p>
+            </li>
+            <li>
+              <p class="date even">Thursday, Mar 10, 2016, 04:00 pm</p>
+              <p class="meeting-title even">Regular Board Meeting</p>
+            </li>
+            <li>
+              <p class="date odd">Thursday, Mar 31, 2016, 04:00 pm</p>
+              <p class="meeting-title odd">Regular Board Meeting</p>
+            </li>
+            <li>
+              <p class="date even">Wednesday, Apr 06, 2016, 08:00 am</p>
+              <p class="meeting-title even">Work Session</p>
+            </li>
+            <li>
+              <p class="date odd">Thursday, Apr 14, 2016, 04:00 pm</p>
+              <p class="meeting-title odd">Regular Board Meeting</p>
+            </li>
+            <li>
+              <p class="date even">Thursday, Apr 28, 2016, 04:00 pm</p>
+              <p class="meeting-title even">Regular Board Meeting</p>
+            </li>
+          </ul>
+          <div class="upcoming-section-image"></div>
+        </div>
+
+        <!-- Board Meetings Section -->
+        <div class="page-section" id="board-meetings">
+          <h1 class="section-header">Board Meetings</h1>
+          <p class="board-meetings-flavor">
+            Regular meetings of the Board of School Trustees are held the second and fourth Thursdays of each month beginning at 4:00 p.m. in the Edward A. Greer Education Center, 2832 East Flamingo Road. Work Sessions are held on the first Wednesday of the month
+            at 8:00 a.m. Special board meetings are held when necessary and are posted in advance in accordance with the Nevada open meeting law.
+          </p>
+
+          <div class="work-sections">
+            <ul>
+              <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/board_calendars/board-meetings-2016.pdf" class="board-meeting-link">2016 Work Sessions and Regular Board Meeting Schedule</a></li>
+              <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/board_calendars/board-meetings-2017.pdf" class="board-meeting-link">2017 Work Sessions and Regular Board Meeting Schedule</a></li>
+            </ul>
+
+          </div>
+
+          <div class="sub-section board-meeting-agendas">
+            <h2 class="section-subheading">Board Meeting Agendas</h2>
+            <ul>
+              <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/meeting-agendas" class="board-meeting-link">2016 Board Meetings</a></li>
+              <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/meeting-agendas/2015" class="board-meeting-link">2015 Board Meetings</a></li>
+              <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/meeting-agendas/2014" class="board-meeting-link">2014 Board Meetings</a></li>
+              <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/meeting-agendas/2013" class="board-meeting-link">2013 Board Meetings</a></li>
+              <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/meeting-agendas/2012" class="board-meeting-link">2012 Board Meetings</a></li>
+              <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/meeting-agendas/2011" class="board-meeting-link">2011 Board Meetings</a></li>
+            </ul>
+          </div>
+
+          <div class="sub-section public-hearing">
+            <h2 class="section-subheading">Public Hearing at Board Meeting</h2>
+            <p class="board-meetings-flavor">
+              The Board of School Trustees recognizes that its deliberative process benefits greatly from public input and perspective. Those wishing to address the Board may sign up to speak by calling the Board Office at 702-799-1072 during regular business hours and at least 3 hours prior to the scheduled start of the meeting. Alternatively, speakers may sign up in person immediately prior to the beginning of the meeting. Prior to each agenda item being voted on, members of the public are allowed to speak on the item after the Board's discussion and prior to their vote. Since approval of the consent agenda may be approved in one motion, members of the public wishing to speak on a consent agenda item may speak prior to the vote. Those members of the public who are speaking on 4 or more items will be allowed a total of 10 minutes. Customarily, speakers will be called in the order in which they signed up. No person may sign up for another individual. No person may yield his or her time to another person. Generally, a person wishing to speak on agenda items will be allowed 3 minutes to address the Board.
+            </p>
+          <div class="upcoming-section-image"></div>
+          </div>
+
+        </div>
+
+        <!-- Board of Trustees Section -->
+        <div class="page-section board-of-trustees" id="know">
+          <h1 class="section-header">Get to Know Your Board of Trustees</h1>
+          <p class="board-meetings-flavor">
+            The Clark County Board of School Trustees is a dedicated group of community leaders who are elected to overlapping four-year terms and represent a specific geographic region of Clark County. Although each trustee represents a different region, they are dedicated to ensuring the success of every student in the district through clear, concise direction to the superintendent. The trustees bring a wealth of experience and concern for children to their position.
+          </p>
+
+          <ul>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/board_calendars/2016/march-2016-bac.pdf" class="board-meeting-link">March 2016 Board of Trustees Activities Calendar</a></li>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/board_calendars/BOT_Perpetual_Calendar.pdf" class="board-meeting-link">Board of Trustees Perpetual Calendar</a></li>
+          </ul>
+
+          <p class="trustee-job">
+            Each trustee hosts monthly parent advisory committee meetings to promote communication with parents and community members and to provide information about important issues in education.
+          </p>
+        </div>
+
+        <!-- Maps Section -->
+        <div class="page-section maps" id="map">
+          <h1 class="section-header"><a href="http://ccsd.net/trustees/contact/all">Maps</a></h1>
+
+          <ul>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/maps/2015-2016/CCSD-board-of-trustees-districts-map.pdf" class="board-meeting-link map-link">Board of Trustee's District Map</a></li>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/maps/2015-2016/trustee-map__district-A.pdf" class="board-meeting-link map-link">District A</a></li>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/maps/2015-2016/trustee-map__district-B.pdf" class="board-meeting-link map-link">District B</a></li>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/maps/2015-2016/trustee-map__district-C.pdf" class="board-meeting-link map-link">District C</a></li>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/maps/2015-2016/trustee-map__district-D.pdf" class="board-meeting-link map-link">District D</a></li>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/maps/2015-2016/trustee-map__district-E.pdf" class="board-meeting-link map-link">District E</a></li>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/maps/2015-2016/trustee-map__district-F.pdf" class="board-meeting-link map-link">District F</a></li>
+            <li class="board-meeting-link-parent"><a href="http://ccsd.net/trustees/pdf/maps/2015-2016/trustee-map__district-G.pdf" class="board-meeting-link map-link">District G</a></li>
+          </ul>
+          <div class="upcoming-section-image"></div>
+
+        </div>
+
+        <!-- Contact Section -->
+        <div class="page-section contact" id="contact">
+          <h1 class="section-header"><a href="http://ccsd.net/trustees/contact/all">Contact a Board Member</a></h1>
+        </div>
+          <div class="upcoming-section-image"></div>
+
+      </div>
+
+      </ion-content>
+      <!-- mainCtrl scope ends here -->
+    </div>
+
+    </div>
+
+
+  </ion-pane>
+</body>
+
+</html>

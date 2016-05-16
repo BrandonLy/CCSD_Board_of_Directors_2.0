@@ -1,0 +1,562 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+/* Micro reset */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif; }
+
+@font-face {
+  font-family: 'adam.cg_proregular';
+  src: url("../fonts/adam.cg_pro-webfont.eot");
+  src: url("../fonts/adam.cg_pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/adam.cg_pro-webfont.woff2") format("woff2"), url("../fonts/adam.cg_pro-webfont.woff") format("woff"), url("../fonts/adam.cg_pro-webfont.ttf") format("truetype"), url("../fonts/adam.cg_pro-webfont.svg#adam.cg_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+div.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white;
+  /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(135deg, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%);
+  background-size: 200%; }
+
+.page-header {
+  text-transform: uppercase;
+  color: #424242;
+  font-family: "adam.cg_proregular";
+  font-size: 32pt; }
+
+.page-tagline {
+  color: #E99E31;
+  max-width: 80%;
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 12pt; }
+
+.page-section {
+  padding-top: 60px; }
+
+.header img {
+  max-width: 100%;
+  margin: 0 auto; }
+
+div.header {
+  width: 90%;
+  border-bottom: 4px solid #DEDEDE;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+  div.header img.home-tagline {
+    text-align: center;
+    display: block;
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+div.line {
+  width: 70%;
+  border-bottom: 4px solid #8EA5D4;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+div.home-banner {
+  margin-left: auto;
+  margin-right: auto;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/pledgeofachievement.jpg) no-repeat;
+  background-size: 100% 100%; }
+  div.home-banner h1.page-header {
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  div.home-banner p.page-tagline {
+    font-size: 16px;
+    color: #E99E31;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+
+menu #menu-wrapper > ul {
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  z-index: 0;
+  text-align: right; }
+  menu #menu-wrapper > ul li {
+    list-style: none; }
+    menu #menu-wrapper > ul li:nth-child(2) {
+      position: relative;
+      left: 10px; }
+      menu #menu-wrapper > ul li:nth-child(2) .right-triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 8px;
+        border-color: transparent transparent transparent #424242;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5px; }
+    menu #menu-wrapper > ul li a {
+      text-decoration: none;
+      color: #424242;
+      font-family: "Source Sans Pro";
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 11pt;
+      display: block;
+      padding: 5px 0; }
+    menu #menu-wrapper > ul li > ul {
+      margin-left: 20px;
+      display: none;
+      position: relative;
+      right: 5px; }
+      menu #menu-wrapper > ul li > ul a {
+        font-weight: 400; }
+
+div.scroller {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  div.scroller p {
+    width: 35%;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #8EA5D4;
+    font-family: "Source Sans Pro";
+    font-size: 8pt;
+    margin-left: auto;
+    margin-right: auto; }
+  div.scroller div.triangle-down {
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto; }
+    div.scroller div.triangle-down img {
+      width: 100%; }
+
+/* Form Styles */
+div.form {
+  height: 95vh;
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+  div.form h1.form-header {
+    color: #424242;
+    font-family: "adam.cg_proregular";
+    font-size: 24pt;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  div.form div.form-tagline {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    div.form div.form-tagline img {
+      padding-bottom: 5px;
+      border-bottom: #DEDEDE solid 5px;
+      text-align: center;
+      display: block;
+      width: 40%;
+      height: 40%; }
+    div.form div.form-tagline div.form-info {
+      display: block;
+      width: 55%; }
+      div.form div.form-tagline div.form-info p.pledge {
+        width: 100%;
+        font-family: "Source Sans Pro";
+        font-weight: 300;
+        color: black;
+        font-size: 8pt; }
+      div.form div.form-tagline div.form-info p.required {
+        padding-top: 15px;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 9pt;
+        font-family: "Source Sans Pro";
+        font-weight: 600; }
+        div.form div.form-tagline div.form-info p.required span.asterisk {
+          font-size: 2.2em;
+          line-height: 6px; }
+  div.form span.asterisk {
+    color: #E99E31;
+    font-size: 20pt; }
+  div.form form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    div.form form div.form-page-1 {
+      height: 60vh; }
+      div.form form div.form-page-1 label {
+        font-size: 0.8em; }
+    div.form form div.form-page-2 p.form-tagline-blue {
+      color: #004A91;
+      margin-top: 20px;
+      text-align: center;
+      font-family: "Source Sans Pro";
+      font-weight: 600;
+      font-style: italic;
+      font-size: 10pt;
+      text-transform: uppercase; }
+    div.form form div.form-page-2 div.more-information-section label {
+      color: #E99E31; }
+    div.form form label {
+      text-transform: uppercase;
+      font-family: "Source Sans Pro";
+      font-weight: 600;
+      font-size: 20pt; }
+    div.form form input {
+      width: 100%;
+      height: 5vh;
+      border: #DEDEDE 5px solid;
+      margin-bottom: 20px; }
+    div.form form button.continue {
+      font-family: "adam.cg_proregular";
+      font-weight: 600;
+      font-style: italic;
+      font-size: 11pt;
+      background: #E99E31;
+      color: #fff;
+      display: block;
+      width: 60%;
+      height: 6vh;
+      border: none;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto; }
+
+.form-page-1 {
+  position: absolute; }
+
+.form-page-2 {
+  display: none;
+  position: absolute; }
+  .form-page-2 .form-tagline {
+    border-bottom: 4px #DEDEDE solid; }
+    .form-page-2 .form-tagline img {
+      border-bottom: none !important;
+      margin: 0 auto; }
+  .form-page-2 label {
+    font-family: "adam.cg_proregular" !important;
+    font-size: 11.27pt !important;
+    width: 100px; }
+  .form-page-2 input[type=checkbox] {
+    width: 30px !important;
+    margin-bottom: 0; }
+  .form-page-2 .more-information-section p {
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 8pt;
+    padding-top: 0;
+    padding-bottom: 20px; }
+  .form-page-2 input[type=submit] {
+    background-color: #E99E31;
+    color: white;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+    width: 60%;
+    height: 6vh;
+    border: none;
+    margin: 30px auto;
+    font-size: 11pt;
+    text-transform: uppercase; }
+
+/* FAQ Styles */
+div.faq-banner {
+  margin-left: auto;
+  margin-right: auto;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/faq.jpg) no-repeat;
+  background-size: 100% 100%; }
+  div.faq-banner h1.page-header {
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  div.faq-banner div.line {
+    width: 70%;
+    border-bottom: 4px solid #8EA5D4;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  div.faq-banner p.page-tagline {
+    font-size: 16px;
+    color: #E99E31;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+
+.section-header {
+  color: #E99E31;
+  font-size: 17pt;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  .section-header a {
+    color: #E99E31;
+    font-size: 17pt;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none; }
+
+.faq-section {
+  width: 95%;
+  font-size: 12pt;
+  margin-left: 2.5%;
+  margin-right: 2.5%; }
+  .faq-section .question {
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  .faq-section .odd a {
+    display: flex;
+    justify-content: space-between;
+    color: #004A91;
+    text-decoration: none; }
+  .faq-section .odd .right-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent #004A91;
+    display: inline-block;
+    vertical-align: top; }
+  .faq-section .odd .down-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 17.3px 10px 0 10px;
+    border-color: #004A91 transparent transparent transparent;
+    display: inline-block;
+    vertical-align: top; }
+  .faq-section .even a {
+    display: flex;
+    justify-content: space-between;
+    color: #8EA5D4;
+    text-decoration: none; }
+  .faq-section .even .right-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent #8EA5D4;
+    display: inline-block;
+    vertical-align: top; }
+  .faq-section .even .down-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 17.3px 10px 0 10px;
+    border-color: #8EA5D4 transparent transparent transparent;
+    display: inline-block;
+    vertical-align: top; }
+  .faq-section .answer {
+    font-size: 10pt;
+    display: none; }
+    .faq-section .answer p {
+      padding-top: 5%; }
+  .faq-section .question-text {
+    font-weight: bold;
+    width: 80%;
+    display: inline-block; }
+
+/* Menu Styles */
+menu {
+  position: fixed;
+  z-index: 1000; }
+
+#hamburger-button {
+  background-image: url("../img/hamburger-button.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35px;
+  height: 28px;
+  position: fixed;
+  top: 10px;
+  left: 26px;
+  z-index: 1000;
+  transition: 500ms; }
+
+#menu-wrapper {
+  height: 100vh;
+  background-color: #8EA5D4;
+  width: 175px;
+  position: absolute;
+  left: 0px;
+  transform: translateX(-175px);
+  top: -10px;
+  transition: 500ms; }
+
+.platform-ios {
+  margin-top: 20px; }
+  .platform-ios #hamburger-button {
+    top: 30px; }
+
+#content-wrapper {
+  margin-top: 40px;
+  transition: 500ms;
+  padding-bottom: 30px; }
+
+/* Trustees Page */
+.section-image {
+  width: 90%;
+  border-bottom: 4px solid #DEDEDE;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+  .section-image img.tagline {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+.trustees-banner {
+  margin-left: auto;
+  margin-right: auto;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/trustees.jpg) no-repeat;
+  background-size: 100% 100%; }
+
+.section-header {
+  font-family: "adam.cg_proregular"; }
+
+.upcoming-meetings .odd {
+  color: #004A91; }
+.upcoming-meetings .even {
+  color: #5486B9; }
+
+.date {
+  width: 49%;
+  display: inline-block;
+  height: 65px;
+  font-family: "Source Sans Pro";
+  font-weight: 900;
+  vertical-align: top;
+  text-align: right; }
+
+.meeting-title {
+  width: 49%;
+  display: inline-block;
+  height: 65px;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  border-left: 2px solid #DEDEDE;
+  vertical-align: top; }
+
+.upcoming-section-image {
+  width: 90%;
+  border-bottom: 4px solid #DEDEDE;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.board-meetings-flavor {
+  text-align: justify;
+  font-size: 10pt;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.board-meeting-link-parent {
+  width: 29%;
+  margin-left: 14%;
+  display: inline-block;
+  line-height: 10pt;
+  vertical-align: top;
+  text-align: center; }
+
+.board-meeting-link {
+  font-family: "Source Sans Pro";
+  font-weight: 900;
+  font-size: 8pt;
+  color: #5486B9; }
+
+.section-subheading {
+  font-style: italic;
+  font-size: 13pt;
+  font-family: "Source Sans Pro";
+  color: #004FA2;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.trustee-job {
+  font-family: "Source Sans Pro";
+  font-size: 12pt;
+  color: #004FA2;
+  text-align: justify;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*# sourceMappingURL=ionic.app.css.map */
